@@ -27,6 +27,7 @@ def count_elements(array)
 end
 
 def merge_data(arr1, arr2)
+  new_array = []
   arr2.each do |data_hash|
     data_hash.each do |name, hash|
       hash.each do |key1, value1|
@@ -36,6 +37,7 @@ def merge_data(arr1, arr2)
             if value2 == name
               new_hash[key1] = value1
             end
+
           end
         end
       end
