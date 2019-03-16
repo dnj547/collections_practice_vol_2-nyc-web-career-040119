@@ -38,7 +38,6 @@ def merge_data(arr1, arr2)
               hash.each do |key1, value1|
                 new_hash[key1] = value1
               end
-              binding.pry
               new_array << new_hash
               return new_array
             end
