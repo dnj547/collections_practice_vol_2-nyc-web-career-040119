@@ -35,7 +35,9 @@ def merge_data(arr1, arr2)
           new_hash = keys_hash.clone
           keys_hash.each do |key2, value2|
             if value2 == name
-              new_hash[key1] = value1
+              hash.each do |key1, value1|
+                new_hash[key1] = value1
+              end
             end
           end
           binding.pry
