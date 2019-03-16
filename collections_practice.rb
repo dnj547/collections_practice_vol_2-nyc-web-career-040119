@@ -34,7 +34,6 @@ def merge_data(arr1, arr2)
       merged_hash[key] = value
     end
     new_array << merged_hash
-    binding.pry
   end
 
   return merged_hash
