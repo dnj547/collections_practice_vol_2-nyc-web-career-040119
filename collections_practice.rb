@@ -44,7 +44,6 @@ def merge_data(arr1, arr2)
         end
         binding.pry
       end
-      binding.pry
     end
   end
 end
