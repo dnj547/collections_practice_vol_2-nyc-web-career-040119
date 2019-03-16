@@ -34,8 +34,8 @@ def merge_data(arr1, arr2)
       arr1.each do |keys_hash|
         if keys_hash[:first_name] = name
           new_hash = hash.merge(keys_hash)
+          new_array << new_hash
         end
-        new_array << new_hash
       end
     end
   end
