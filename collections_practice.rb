@@ -31,14 +31,16 @@ def merge_data(arr1, arr2)
   arr1.each do |keys_hash|
     keys_hash.each do |key1, value1|
       merged_hash[key1] = value1
-      arr2.each do |data_hash|
-        data_hash.each do |name, hash3|
-          if value1 == name
-            hash3.each do |key3, value3|
-              merged_hash[key3] = value3
-              binding.pry
-            end
-          end
+      binding.pry
+    end
+  end
+
+  arr2.each do |data_hash|
+    data_hash.each do |name, hash3|
+      if value1 == name
+        hash3.each do |key3, value3|
+          merged_hash[key3] = value3
+          binding.pry
         end
       end
     end
