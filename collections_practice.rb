@@ -35,6 +35,7 @@ def merge_data(arr1, arr2)
           new_hash = hash.merge(keys_hash)
         end
       end
+      binding.pry
       new_hash
     end
   end
