@@ -32,16 +32,10 @@ def merge_data(arr1, arr2)
   arr1.each do |keys_hash|
     keys_hash.each do |key, value|
       merged_hash[key] = value
-      binding.pry
-    end
-  end
-  arr1.each do |keys_hash|
-    keys_hash.each do |key1, value1|
-      merged_hash[key1] = value1
     end
     new_array << merged_hash
   end
-  binding.pry
+
   return merged_hash
   arr2.each do |data_hash|
     data_hash.each do |name, hash3|
