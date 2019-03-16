@@ -37,8 +37,8 @@ def merge_data(arr1, arr2)
             if value2 == name
               new_hash[key1] = value1
             end
-
           end
+          new_array << new_hash
         end
       end
     end
