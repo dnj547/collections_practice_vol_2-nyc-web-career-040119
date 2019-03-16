@@ -38,15 +38,16 @@ def merge_data(arr1, arr2)
               hash.each do |key1, value1|
                 new_hash[key1] = value1
               end
+              binding.pry
             end
+            binding.pry
           end
-          new_array << new_hash
+          binding.pry
         end
+        binding.pry
       end
     end
   end
-  binding.pry
-  return new_array
 end
 
 def find_cool
