@@ -56,6 +56,7 @@ def organize_schools(schools)
     location_hash.each do |location_key, location_value|
       if location_value == new_hash[location_value]
         new_hash[location_value] << school_name
+        binding.pry
       else
         school_array = []
         school_array << school_name
