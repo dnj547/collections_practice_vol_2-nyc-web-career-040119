@@ -29,11 +29,11 @@ end
 def merge_data(arr1, arr2)
   arr2.each do |data_hash|
     data_hash.each do |name, hash|
-      arr1.each do |keys_hash|
-        keys_hash.each do |key, value|
-          if value == name
-            hash.each do |key1, value1|
-              binding.pry
+      hash.each do |key1, value1|
+        arr1.each do |keys_hash|
+          keys_hash.each do |key2, value2|
+            if value2 == name
+              keys_hash[key1] = value1
             end
           end
         end
