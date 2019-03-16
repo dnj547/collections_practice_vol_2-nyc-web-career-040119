@@ -34,7 +34,6 @@ def merge_data(arr1, arr2)
         if keys_hash[:first_name] = name
           new_hash = {}
           new_hash = hash.merge(keys_hash)
-          binding.pry
           new_array << new_hash
         end
       end
