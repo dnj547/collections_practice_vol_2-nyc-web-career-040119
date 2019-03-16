@@ -57,7 +57,6 @@ def organize_schools(schools)
       if !new_hash[location_value].nil?
         new_hash[location_value] << school_name
       else
-        binding.pry
         school_array = []
         school_array << school_name
         new_hash[location_value] = school_array
