@@ -40,8 +40,8 @@ def merge_data(arr1, arr2)
               end
               new_array << new_hash
             end
-            return new_array
           end
+          return new_array
         end
       end
     end
