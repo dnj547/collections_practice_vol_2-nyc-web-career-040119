@@ -35,11 +35,10 @@ def merge_data(arr1, arr2)
         if keys_hash[:first_name] = name
           new_hash = hash.merge(keys_hash)
         end
+        new_array << new_hash
       end
-      new_array << new_hash
     end
   end
-  binding.pry
   new_array
 end
 
