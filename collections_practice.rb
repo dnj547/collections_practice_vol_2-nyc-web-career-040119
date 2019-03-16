@@ -59,4 +59,5 @@ def organize_schools(schools)
       new_hash[value] = school_array
     end
   end
+  new_hash
 end
