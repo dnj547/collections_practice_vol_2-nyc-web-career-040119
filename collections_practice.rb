@@ -39,7 +39,6 @@ def merge_data(arr1, arr2)
         end
       end
     end
-    return keys_hash
   end
 end
 
