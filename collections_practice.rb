@@ -61,10 +61,6 @@ def organize_schools(schools)
         school_array << school_name
         new_hash[location_value] = school_array
       end
-
-      school_array = []
-      school_array << school_name
-      new_hash[location_value] = school_array
     end
   end
   new_hash
