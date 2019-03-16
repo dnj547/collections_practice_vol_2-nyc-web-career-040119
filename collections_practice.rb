@@ -39,8 +39,8 @@ def merge_data(arr1, arr2)
                 new_hash[key1] = value1
               end
               new_array << new_hash
-              return new_array
             end
+            return new_array
           end
         end
       end
