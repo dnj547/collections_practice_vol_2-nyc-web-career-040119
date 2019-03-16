@@ -41,17 +41,6 @@ def merge_data(arr1, arr2)
     end
     return keys_hash
   end
-
-  arr2.each do |data_hash|
-    data_hash.each do |name, hash3|
-      if value1 == name
-        hash3.each do |key3, value3|
-          merged_hash[key3] = value3
-        end
-      end
-    end
-  end
-  return merged_hash
 end
 
 def find_cool
