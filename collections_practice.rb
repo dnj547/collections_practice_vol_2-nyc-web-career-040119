@@ -43,7 +43,7 @@ def merge_data(arr1, arr2)
           end
         end
       end
-      return new_array
+      return new_array.uniq
     end
   end
 end
