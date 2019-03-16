@@ -33,7 +33,6 @@ def merge_data(arr1, arr2)
         arr1.each do |keys_hash|
           keys_hash.each do |key2, value2|
             if value2 == name
-              binding.pry
               keys_hash[key1] = value1
             end
           end
