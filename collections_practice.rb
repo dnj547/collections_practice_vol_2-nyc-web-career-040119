@@ -33,7 +33,7 @@ def merge_data(arr1, arr2)
       hash.each do |key1, value1|
         arr1.each do |keys_hash|
           new_hash = keys_hash.clone
-          new_hash.each do |key2, value2|
+          keys_hash.each do |key2, value2|
             if value2 == name
               new_hash[key1] = value1
             end
