@@ -28,15 +28,20 @@ end
 
 def merge_data(arr1, arr2)
   new_array = []
-  merged_hash = {}
   arr1.each do |keys_hash|
     keys_hash.each do |key, value|
+      merged_hash = {}
       merged_hash[key] = value
     end
     new_array << merged_hash
   end
 
-  return merged_hash
+  arr2.each do |data_hash|
+    data_hash.each do |name, hash|
+
+    end
+  end
+
   arr2.each do |data_hash|
     data_hash.each do |name, hash3|
       if value1 == name
