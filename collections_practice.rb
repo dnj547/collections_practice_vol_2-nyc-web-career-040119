@@ -31,10 +31,11 @@ def merge_data(arr1, arr2)
     data_hash.each do |name, hash|
       hash.each do |key1, value1|
         arr1.each do |keys_hash|
-          keys_hash.clone.each do |key2, value2|
+          new_hash = keys_hash.clone
+          new_hash.each do |key2, value2|
             if value2 == name
               binding.pry
-              keys_hash[key1] = value1
+              new_hash[key1] = value1
             end
           end
         end
