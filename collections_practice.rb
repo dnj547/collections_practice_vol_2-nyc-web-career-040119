@@ -39,6 +39,7 @@ def merge_data(arr1, arr2)
       new_array << new_hash
     end
   end
+  new_array
 end
 
 def find_cool
