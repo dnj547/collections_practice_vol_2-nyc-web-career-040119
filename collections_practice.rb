@@ -31,6 +31,7 @@ def merge_data(arr1, arr2)
   arr2.each do |data_hash|
     data_hash.each do |name, hash|
       arr1.each do |keys_hash|
+        binding.pry
         if keys_hash[:first_name] = name
           new_hash = {}
           new_hash = keys_hash.merge(hash)
