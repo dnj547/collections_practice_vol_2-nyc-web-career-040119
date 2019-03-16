@@ -50,5 +50,8 @@ def find_cool(cool)
   new_array
 end
 
-def organize_schools
+def organize_schools(schools)
+  schools.each do |school_name, location_hash|
+    binding.pry
+  end
 end
