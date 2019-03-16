@@ -29,11 +29,10 @@ end
 def merge_data(arr1, arr2)
   new_array = []
   arr1.each do |keys_hash|
+    merged_hash = {}
     keys_hash.each do |key, value|
-      merged_hash = {}
       merged_hash[key] = value
     end
-    binding.pry
     new_array << merged_hash
   end
 
