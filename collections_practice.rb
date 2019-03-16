@@ -30,6 +30,11 @@ def merge_data(arr1, arr2)
   new_array = []
   merged_hash = {}
   arr1.each do |keys_hash|
+    keys_hash.each do |key, value|
+      merged_hash[key] = value
+    end
+  end
+  arr1.each do |keys_hash|
     keys_hash.each do |key1, value1|
       merged_hash[key1] = value1
     end
