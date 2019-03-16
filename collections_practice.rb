@@ -40,7 +40,14 @@ def merge_data(arr1, arr2)
   new_array
 end
 
-def find_cool
+def find_cool(cool)
+  new_array = []
+  cool.each do |hash|
+    if hash[:temperature] == "cool"
+      new_array << hash
+    end
+  end
+  new_array
 end
 
 def organize_schools
